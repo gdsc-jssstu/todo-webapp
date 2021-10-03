@@ -1,0 +1,23 @@
+<%- include("./partials/header") %>
+
+<div class="container">
+  <form action="add/todo" method="POST">
+    <input
+      type="text"
+      name="todo"
+      id=""
+      class="form-control"
+      placeholder="Enter Task"
+    />
+    <input type="submit" value="Add Task" />
+  </form>
+  <ul>
+    <!-- from routes/index.js we take the data from db and display it here  -->
+    <!-- js code -->
+    <% todo.forEach(todos => { %>
+    <li><%= todos.todo %></li>
+    <% }) %>
+  </ul>
+</div>
+
+<%- include("./partials/footer") %>
