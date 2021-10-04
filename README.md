@@ -51,12 +51,8 @@ The base project is a bare-bones To-Do List web app where you can only add and v
  
 Click [here](https://www.figma.com/file/TfPdLp6P3EgJoej3NjBJik/To-Do-List?node-id=0%3A1) for the UI design and prototype of the project.
  
-![To-Do landing page](readme_images/todo1.PNG)
- 
 ![To-Do list page](readme_images/todo2.PNG)
- 
-![To-Do checked page](readme_images/todo3.PNG)
- 
+
 ![To-Do options page](readme_images/todo4.PNG)
  
 ![To-Do sorted page](readme_images/todo5.PNG)
