@@ -1,4 +1,4 @@
-# Hacktoberfest : Todo app 📒✏️✔️
+# Todo Web App 📒✏️✔️
 A simple todo app as an introduction to web-development, and contribution to opensource projects.
  
 Hacktoberfest is a month-long celebration of open source software run by DigitalOcean. During the month of October, you are invited to join open-source software enthusiasts, beginners, and the developer community by contributing to open-source projects.
