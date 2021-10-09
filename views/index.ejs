@@ -1,16 +1,22 @@
 <%- include("./partials/header") %>
 
-<div class="container">
-  <form action="add/todo" method="POST">
-    <input
-      type="text"
-      name="todo"
-      id=""
-      class="form-control"
-      placeholder="Enter Task"
-    />
-    <input type="submit" value="Add Task" />
+<div class="box">
+  <h1>To-Do List</h1>
+  <form action="add/todo"class="new" method="POST">
+    <div class="item1"><input type="text" name="todo" id=""class="item1child" placeholder="Enter Task" /></div>
+    <div class="item2"><input type="submit"class="item2child" value="Add" /></div>
+    <div class="dropdown">
+      <button class="dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+       <img src="img/vertical-dots.svg">
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Uncheck all items</a></li>
+        <li><a class="dropdown-item" href="#">Filter Items</a></li>
+        <li><a class="dropdown-item" href="#">Delete checked items</a></li>
+      </ul>
+    </div>
   </form>
+  <div class="box2">
   <ul>
     <!-- from routes/index.js we take the data from db and display it here  -->
     <!-- js code -->
@@ -23,6 +29,7 @@
     </li>
     <% }) %>
   </ul>
+</div>
 </div>
 
 

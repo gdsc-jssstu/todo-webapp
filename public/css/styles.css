@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    background: linear-gradient(
+        rgba(250,135,89,255) 0%,
+        rgba(250,135,89,255) 50%,
+        white 50%,
+        white 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new{
+    display: flex;
+}
+.item1{
+    width: 30rem;
+    margin-right: 2%;
+    border: 0;
+
+}
+.item1child{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item2child{
+    background-color: rgb(94, 196, 94);
+    border-radius: 20%;
+}
+h1{
+    color: rgba(166,60,41,255);
+    font-family: 'Merriweather', serif;
+}
+.box2{
+    min-height: 10rem;
+    min-width: 10rem;
+    margin-top: 2%;
+    background-color: #f9e2da;
+}
+.dropdown{
+    border: 0;
+    background-color: rgba(250,135,89,255);
+}
