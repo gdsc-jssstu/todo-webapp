@@ -20,7 +20,7 @@ router.delete("/delete/:id", (req, res) => {
   const { id } = req.params;
 
   // delete todo by its Mongo ID
-  Todo.findByIdAndRemove(id).then(() => {
+  Todo.findByIdAndDelete(id).then(() => {
       console.log("Successfully deleted todo!");
       res.redirect("/");
   })
