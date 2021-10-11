@@ -10,6 +10,22 @@ body{
     justify-content: center;
     align-items: center;
 }
+ul{
+    list-style-type: none;
+    border: 2px rgb(211, 16, 16);
+
+}
+h1{
+    color: rgba(166,60,41,255);
+    font-family: 'Merriweather', serif;
+}
+.checkbox{
+    margin-right: 3px;
+    vertical-align:middle;
+}
+.listItem{
+    padding: 9px;
+}
 .new{
     display: flex;
 }
@@ -25,13 +41,15 @@ body{
 }
 
 .item2child{
-    background-color: rgb(94, 196, 94);
+    transition-duration: 0.4s;
+    background-color: white;
     border-radius: 20%;
 }
-h1{
-    color: rgba(166,60,41,255);
-    font-family: 'Merriweather', serif;
-}
+.item2child:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
 .box2{
     min-height: 10rem;
     min-width: 10rem;
