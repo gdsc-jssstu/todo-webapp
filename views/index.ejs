@@ -4,7 +4,7 @@
   <h1>To-Do List</h1>
   <form action="add/todo"class="new" method="POST">
     <div class="item1"><input type="text" name="todo" id=""class="item1child" placeholder="Enter Task" /></div>
-    <div class="item2"><input type="submit"class="item2child" value="Add" /></div>
+    <div class="item2"><button type="submit"class="item2child">ADD</button></div>
     <div class="dropdown">
       <button class="dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
        <img src="img/vertical-dots.svg">
@@ -21,10 +21,12 @@
     <!-- from routes/index.js we take the data from db and display it here  -->
     <!-- js code -->
     <% todo.forEach(todos => { %>
-    <li>
+
+    <li class="listItem">
       <form action="delete/<%= todos._id %>" method="POST">
-        <label><%= todos.todo %></label>
-        <input type="submit" value="X" />
+      <input type="checkbox"name="checkbox" class="checkbox" >
+      <label><%= todos.todo %></label>
+      <input type="submit" value="X" />
       </form>
     </li>
     <% }) %>
