@@ -16,7 +16,7 @@ router.post("/add/todo", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-router.delete("/delete/:id", (req, res) => {
+router.post("/delete/:id", (req, res) => {
   const { id } = req.params;
 
   // delete todo by its Mongo ID
