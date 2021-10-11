@@ -15,9 +15,14 @@
     <!-- from routes/index.js we take the data from db and display it here  -->
     <!-- js code -->
     <% todo.forEach(todos => { %>
-    <li><%= todos.todo %></li>
+    <li>
+      <form action="delete/<%= todos._id %>" method="POST">
+        <label><%= todos.todo %></label>
+        <input type="submit" value="X" />
+      </form>
+    </li>
     <% }) %>
   </ul>
 </div>
 
-<%- include("./partials/footer") %>
+
