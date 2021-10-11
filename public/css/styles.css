@@ -19,10 +19,23 @@ h1{
     color: rgba(166,60,41,255);
     font-family: 'Merriweather', serif;
 }
+p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 200;
+    
+  }
 .checkbox{
     margin-right: 3px;
     vertical-align:middle;
+    outline: solid 2px #1e5180
 }
+input:checked+label {
+    text-decoration: line-through;
+    text-decoration-color: #A683E3;
+  }
 .listItem{
     padding: 9px;
 }
